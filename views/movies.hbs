@@ -1,0 +1,11 @@
+test affichage OK
+
+<ul>
+    {{#each films}}
+    <li>
+        <p>{{this.title}}</p>
+        <img src="{{this.image}}" alt="">
+        <a href="/movies/{{this._id}}">See details</a>
+    </li>
+    {{/each}}
+</ul>
